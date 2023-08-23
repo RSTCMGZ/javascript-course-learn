@@ -41,51 +41,50 @@
 
 //! Javascript Veri Türleri
 
-//? 1- String
+// //? 1- String
 
-let isim = "Reşo"
-console.log(isim);
-console.log(typeof (isim));
+// let isim = "Reşo"
+// console.log(isim);
+// console.log(typeof (isim));
 
-//? 2- Number
+// //? 2- Number
 
-let yas = 66;
-console.log(yas);
-console.log(typeof (yas));
+// let yas = 66;
+// console.log(yas);
+// console.log(typeof (yas));
 
-//? 3-Boolean
+// //? 3-Boolean
 
-let not = 40;
-let basari = (not >= 50);
+// let not = 40;
+// let basari = (not >= 50);
 
-console.log(basari);
+// console.log(basari);
 
-//? 4-Object Array 
+//? 4-Object Array
 
-let dizi = ["Serkan", 25, true, [1, 2, 3, 4]];
-console.log(dizi[3]);
-console.log(typeof (dizi));
+// let dizi = ["Serkan", 25, true, [1, 2, 3, 4]];
+// console.log(dizi[3]);
+// console.log(typeof (dizi));
 
 
 
-let sayilar = [1, 2, 3, 4, 5, 6]
+// let sayilar = [1, 2, 3, 4, 5, 6]
 
-sayilar.push(7) //!sona eleman ekler
-sayilar.unshift(0) //!sondaki elemanı siler
-sayilar.shift() //!ilk baştaki elemanı siler
-sayilar.pop() //!başa eleman ekler.
-sayilar.splice(2, 2) //!içe yazılan diziyi siler.
-console.log(sayilar);
+// sayilar.push(7) //!sona eleman ekler
+// sayilar.unshift(0) //!sondaki elemanı siler
+// sayilar.shift() //!ilk baştaki elemanı siler
+// sayilar.pop() //!başa eleman ekler.
+// sayilar.splice(2, 2) //!içe yazılan diziyi siler.
+// console.log(sayilar);
 
 //? 5-Object
-let x = {
-    model: "Clio",
-    yil: "2013",
-    renk: "Turuncu",
-}
-console.log(x.model);
-console.log(x["model"]);
-
+// let x = {
+//     model: "Clio",
+//     yil: "2013",
+//     renk: "Turuncu",
+// }
+// console.log(x.model);
+// console.log(x["model"]);
 
 
 
