@@ -130,4 +130,8 @@ sonuc = kursAdi.trim(); // boslukları siler
 sonuc = kursAdi.trimStart(); // baştaki boslukları siler
 sonuc = kursAdi.trimEnd(); // sondaki boslukları siler
 
+sonuc = kursAdi.indexOf("u") // bir elemanın index numarasına erişebiliriz.
+sonuc = kursAdi.split(" ") // bir dizi çevirir boşluk ve tırnak koyarsak dizi olarak verir.sadece boşlukta diziye çevirir.
+sonuc = kursAdi.split(" ")[0] // diziye çevirip elemana ulaştık
+
 console.log(sonuc);

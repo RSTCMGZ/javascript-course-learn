@@ -17,7 +17,7 @@
 
 //! Değişken Tanımlama Kuralları
 
-//? 1- Değişkenlerin başında sayı-harf bulunamaz.
+//? 1- Değişkenlerin başında sayı bulunamaz.
 //? 2- Değişken ismi içinde boşluk karakteri bulunamaz.
 //? 3- Değişken ismi içinde özel karakter bulunamaz.(?,!,%,&,:,;)
 //? 4- Değişken ismi içinde iki kelime varsa _ kullanabiliriz.
@@ -36,13 +36,12 @@
 
 //! Javascript Veri Girişi
 
-// let isim = prompt("Lütfen adınızı giriniz :");
+// let isimı = prompt("Lütfen adınzı giriniz :");
 // let isim1 = confirm("sitemizi beğendiniz mi ?");
 
 //! Javascript Veri Türleri
 
 // //? 1- String
-
 // let isim = "Reşo"
 // console.log(isim);
 // console.log(typeof (isim));
@@ -71,9 +70,9 @@
 // let sayilar = [1, 2, 3, 4, 5, 6]
 
 // sayilar.push(7) //!sona eleman ekler
-// sayilar.unshift(0) //!sondaki elemanı siler
+// sayilar.unshift(0) //! başa eleman ekler.
 // sayilar.shift() //!ilk baştaki elemanı siler
-// sayilar.pop() //!başa eleman ekler.
+// sayilar.pop() //!sondaki elemanı siler
 // sayilar.splice(2, 2) //!içe yazılan diziyi siler.
 // console.log(sayilar);
 
