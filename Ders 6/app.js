@@ -142,14 +142,37 @@
 //     i++
 // }
 
-e
 //! ÖDEV-1 while döngüsü kullanarak bir sayı tahmin oyunu yapın.Bir sayı belirleyin Eğer kullanıcı doğru tahmin ederse doğru bildin desin.Eğer tahmin sayıdan düşük kalırsa yükseltin desin, yüksek kalırsa azaltın desin.Kullanıcının 5 tahmin hakkı olsun.Hak biterse hakkınız bitti diyip oyunu sonlandırsın.
 
+let sayi = 5;
+let hak = 5;
+
+let tahmin = Number(prompt("Bir tahmin giriniz :"))
+hak--
+
+while (sayi != tahmin) {
+    tahmin = Number(prompt("Tekrar Deneyiniz :"))
+    if (tahmin == sayi) {
+        console.log(`Doğru bildin. kalan hakkın ${hak}`);
+        break
+    } else if (hak == 1) {
+        console.log(`Hakkın bitti. Bulmanız gereken sayı ${sayi}`);
+        break;
+    } else if (tahmin < sayi) {
+
+        console.log(`Yükseltin. Kalan hakkınız ${hak}`);
+        hak--
+    } else if (tahmin > sayi) {
+
+        console.log(`Azaltın. Kalan hakkınız ${hak}`);
+        hak--
+    }
+}
 
 
-
-
-
+if (tahmin == sayi) {
+    console.log(`Doğru bildin. kalan hakkın ${hak}`);
+}
 
 
 
