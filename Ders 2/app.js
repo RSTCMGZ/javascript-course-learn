@@ -9,7 +9,6 @@
 
 // let a = 2; b = 7; c = 12;
 
-
 // let sonuc;
 
 // //? Toplama Operatörü
