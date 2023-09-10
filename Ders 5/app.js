@@ -42,7 +42,7 @@
 // let isim = prompt("Adınızı giriniz :")
 // let yas = Number(prompt("Yasınızı giriniz :"))
 
-// if (isim == " " || yas == "") {
+// if (isim == " " || yas == " ") {
 //     console.log("isim ve yas bos bırakılmaz")
 // } else if (!(yas > 15 && yas < 100)) {
 //     console.log("ya cok kucuk yada cok buyuk")
@@ -100,7 +100,7 @@
 
 //! DÖNGÜLERE GİRİŞ
 
-//? 0 dana başlayıp 10'a kadar birer arttıran değeri giriniz.
+//? 0 dan başlayıp 10'a kadar birer arttıran değeri giriniz.
 
 //for (let i = 0; i < 10; i++) {   //? let i = 0 başlangıç değeri gir; let < 10 bitiş değeri girdik. ve i++ = i'yi bir arttırdık.
 //    console.log(i);              //? i yerine istediğin kadar değer gir neos,reşo yinede çalıştırır fakat i değeri global deerdir
