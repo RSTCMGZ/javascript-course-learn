@@ -56,14 +56,14 @@
 
 //!!  web sitemize yalnızca üniversite ve lise öğrencilerini kabul ettiğimizi düşünün.Select elementi kullanarak yapalım.  -->
 
-document.getElementById("btn").onclick = function () {
-    let okul = document.getElementById("okul").value;
-    if (okul == "Lise" || okul == "Üniversite") {
-        document.getElementById("sonuc").innerHTML = `Seçiminiz  ${okul} kabul edildiniz`
-    } else {
-        document.getElementById("sonuc").innerHTML = `Seçiminiz ${okul} kabul edilmediniz`
-    }
-}
+// document.getElementById("btn").onclick = function () {
+//     let okul = document.getElementById("okul").value;
+//     if (okul == "Lise" || okul == "Üniversite") {
+//         document.getElementById("sonuc").innerHTML = `Seçiminiz  ${okul} kabul edildiniz`
+//     } else {
+//         document.getElementById("sonuc").innerHTML = `Seçiminiz ${okul} kabul edilmediniz`
+//     }
+// }
 
 
 
