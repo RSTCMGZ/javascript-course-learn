@@ -74,11 +74,10 @@
 //! h1 etiketine class ekleyip ismini ekle yaptık
 // const h1 = document.querySelector("#title");
 // h1.setAttribute("class", "ekle") // h1 etiketine class ekleyip ismini ekle yaptık
-h1.classlist.add("ekle")
-h1.classlist.remove("naber")
+// h1.classlist.add("ekle")
+// h1.classlist.remove("naber")
 //! li etiketine class ekleyip ismini ekle yaptık
 // const li = document.getElementsByTagName("li")
-
 // for (let i = 0; i < li.length; i++) {
 //     li[i].setAttribute("class", "ekle")
 //     li[i].innerText = "Merhaba " + i
