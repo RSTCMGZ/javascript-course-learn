@@ -41,9 +41,9 @@
 //     p.innerHTML = value;
 // })
 //! İnputlar içine girilen sayılar butona tıklandığında p etiketi içinde toplansın.
-// let btn = document.querySelector("button")
-// let input = document.querySelectorAll("input")
-// let p = document.querySelector("p")
+let btn = document.querySelector("button")
+let input = document.querySelectorAll("input")
+let p = document.querySelector("p")
 // btn.addEventListener("click", () => {
 //     let value = Number(input[0].value)
 //     let value1 = Number(input[1].value)
@@ -51,15 +51,15 @@
 // })
 //? Farklı bir yol
 
-// btn.addEventListener("click", topla)
+btn.addEventListener("click", topla)
 
-// function topla() {
-//     btn.addEventListener("click", () => {
-//         let value = Number(input[0].value)
-//         let value1 = Number(input[1].value)
-//         p.innerHTML = value + value1
-//     })
-// }
+function topla() {
+    btn.addEventListener("click", () => {
+        let value = Number(input[0].value)
+        let value1 = Number(input[1].value)
+        p.innerHTML = value + value1
+    })
+}
 //! butona tıkladığında renk kodunu alıp body'i o renge atasın.
 // let btn = document.getElementById("btn")
 // let input = document.querySelector("input")
@@ -79,9 +79,9 @@
 // document.body.style.backgroundColor = value
 // }
 // btn.addEventListener("click", degistir)
-// function degistir(){
-//      let value = input.value
-//      document.body.style.backgroundColor = value
+// function degistir() {
+//     let value = input.value
+//     document.body.style.backgroundColor = value
 // }
 //! div'e tıklandığında renk butonunda hangi kod var ise o rengi göstersin.
 let div = document.querySelectorAll("div")
