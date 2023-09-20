@@ -38,15 +38,15 @@
 
 //! butona tıklandığında bir p etiketi yaratılsın bu p etiketinin Textcontenti input içine yazılan bilgiler olsun bunuda wrapper içine append edelim.
 
-// const div = document.querySelector(".wrapper")
-// const inp = document.getElementById("inp")
-// const btn = document.getElementById("btn")
-// const p = document.createElement("p")
+const div = document.querySelector(".wrapper")
+const inp = document.getElementById("inp")
+const btn = document.getElementById("btn")
+const p = document.createElement("p")
 
-// btn.addEventListener("click", () => {
-//     p.textContent = inp.value;
-// })
-// div.appendChild(p)
+btn.addEventListener("click", () => {
+    p.textContent = inp.value;
+})
+div.appendChild(p)
 
 
 //!inputa bir sayı yazılacak ve yazılan o sayıya kadar bütün sayılar ekrana li etiketleriyle yazdırılacak.Sayılar çift ise kırmızı tek ise mavi olsun.
@@ -70,18 +70,18 @@
 //     div.appendChild(ul)
 // })
 
-const input = document.querySelector("input")
-const i = document.querySelector("i")
+// const input = document.querySelector("input")
+// const i = document.querySelector("i")
 
-i.addEventListener("click", () => {
-    if (input.getAttribute("type") == "password") {
-        input.setAttribute("type", "text")
-        i.classList.remove("bi-eye")
-        i.classList.add("bi-eye-slash")
-    } else {
-        input.setAttribute("type", "password")
-        i.classList.remove("bi-eye-slash")
-        i.classList.add("bi-eye")
-    }
-})
+// i.addEventListener("click", () => {
+//     if (input.getAttribute("type") == "password") {
+//         input.setAttribute("type", "text")
+//         i.classList.remove("bi-eye")
+//         i.classList.add("bi-eye-slash")
+//     } else {
+//         input.setAttribute("type", "password")
+//         i.classList.remove("bi-eye-slash")
+//         i.classList.add("bi-eye")
+//     }
+// })
 
