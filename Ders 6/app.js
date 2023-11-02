@@ -144,35 +144,171 @@
 
 //! ÖDEV-1 while döngüsü kullanarak bir sayı tahmin oyunu yapın.Bir sayı belirleyin Eğer kullanıcı doğru tahmin ederse doğru bildin desin.Eğer tahmin sayıdan düşük kalırsa yükseltin desin, yüksek kalırsa azaltın desin.Kullanıcının 5 tahmin hakkı olsun.Hak biterse hakkınız bitti diyip oyunu sonlandırsın.
 
-let sayi = 5;
-let hak = 5;
+// let sayi = 5;
+// let hak = 5;
 
-let tahmin = Number(prompt("Bir tahmin giriniz :"))
-hak--
+// let tahmin = Number(prompt("Bir tahmin giriniz :"))
+// hak--
 
-while (sayi != tahmin) {
-    tahmin = Number(prompt("Tekrar Deneyiniz :"))
-    if (tahmin == sayi) {
-        console.log(`Doğru bildin. kalan hakkın ${hak}`);
-        break
-    } else if (hak == 1) {
-        console.log(`Hakkın bitti. Bulmanız gereken sayı ${sayi}`);
-        break;
-    } else if (tahmin < sayi) {
+// while (sayi != tahmin) {
+//     tahmin = Number(prompt("Tekrar Deneyiniz :"))
+//     if (tahmin == sayi) {
+//         console.log(`Doğru bildin. kalan hakkın ${hak}`);
+//         break
+//     } else if (hak == 1) {
+//         console.log(`Hakkın bitti. Bulmanız gereken sayı ${sayi}`);
+//         break;
+//     } else if (tahmin < sayi) {
 
-        console.log(`Yükseltin. Kalan hakkınız ${hak}`);
-        hak--
-    } else if (tahmin > sayi) {
+//         console.log(`Yükseltin. Kalan hakkınız ${hak}`);
+//         hak--
+//     } else if (tahmin > sayi) {
 
-        console.log(`Azaltın. Kalan hakkınız ${hak}`);
-        hak--
+//         console.log(`Azaltın. Kalan hakkınız ${hak}`);
+//         hak--
+//     }
+// }
+
+
+// if (tahmin == sayi) {
+//     console.log(`Doğru bildin. kalan hakkın ${hak}`);
+// }
+//! çarpım tablosunun nereden başlayacağı bilinmiyor onun için 2Ler basamagını ekrana yazan bir çarpım tablosu oluşturalım.
+
+// let i = 1;
+// while (i <= 10) {
+//     console.log(`2 x ${i} = ${i * 2}`);
+//     i++
+// }
+//! FOR DÖNGÜSÜ TEKRAR
+
+// for(let i= 0; i<10; i++){
+//     console.log(i);
+// }
+
+//!SORU 0-100 arasında kaç çift sayı vardır?
+
+// for (let i = 0; i < 100; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
+//! Dizi ile
+// let dizi = []
+// for (let i = 0; i < 100; i++) {
+//     if (i % 2 == 0) {
+//         dizi.push(i)
+//     }
+// }
+// console.log(dizi.length);
+//! 0-100 arasındaki sayı toplamını ekrana yazdır
+// let toplam = 0;
+// for (let i = 0; i < 100; i++) {
+//     toplam += i
+// }
+// console.log(toplam);
+
+//! 0-100 arasındaki butun tek ve çift sayıları ayrı ayrı toplayın
+// let toplamCift = 0
+// let toplamTek = 0
+// for (let i = 0; i <= 100; i++) {
+//     if (i % 2 == 0) {
+//         toplamCift += i
+//     } else {
+//         toplamTek += i
+//     }
+// }
+
+// console.log([toplamCift], [toplamTek]);
+
+//! 0-100 arasında bir random sayı üretin.Rastgele 5 değer üreterek bunları bir dizi içerisine gönderin.
+
+// let dizi = []
+// for (i = 0; i < 10; i++) {
+//     let random = Math.round(Math.random() * 100)
+//     if (dizi.includes(random)) {
+//         continue
+//     }x
+//     dizi.push(random)
+//     i++
+// }
+// console.log(dizi);
+
+// let sınıf = ["Mehmet", "Ahmet", "Hüseyin", "Cabbar", "Ayşe", "Fatma", "Hayriye", "Kadriye"]
+
+// let random = Math.round(Math.random() * (sınıf.length - 1))
+
+
+// console.log(sınıf[random]);
+//!bir diziye yukardaki rastgele dizisinden rastgele 5 tane eleman atın
+
+
+// let sifreci = ["a", "b", "c", "#", "-", "+", 1, 2, 3, 4]
+
+// let dizi = []
+// for (i = 0; i < 5; i++) {
+//     let random = Math.round(Math.random() * (sifreci.length - 1))
+
+//     if (dizi.includes(sifreci[random])) {
+//         i--
+//         continue
+//     }
+//     dizi.push(sifreci[random])
+// }
+// console.log(dizi.join(""));
+
+
+// let dizi = []
+
+// for (i = 0; i < 3; i++) {
+//     let random = Math.round(Math.random() * 255)
+//     dizi.push(random)
+// }
+// console.log(`rgb (${dizi[0]}, ${dizi[1]}, ${dizi[2]}) `);
+
+// let dizi = ["#",]
+// let hex = ["A", "B", "C", "D","E"]
+
+// for (i = 0; i < 3; i++) {
+//     let random = Math.round(Math.random() * 255)
+//     dizi.push(random)
+// }
+
+let sehirler = ["Adana", "Adıyaman", "Afyon", "Ağrı", "Amasya", "Ankara", "Antalya", "Artvin", "Aydın", "Balıkesir", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Edirne", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkari", "Hatay", "Isparta", "İçel (Mersin)", "İstanbul", "İzmir", "Kars", "Kastamonu", "Kayseri", "Kırklareli", "Kırşehir", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa", "Kahramanmaraş", "Mardin", "Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Tekirdağ", "Tokat", "Trabzon", "Tunceli", "Şanlıurfa", "Uşak", "Van", "Yozgat", "Zonguldak", "Aksaray", "Bayburt", "Karaman", "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan", "Iğdır", "Yalova", "Karabük", "Kilis", "Osmaniye", "Düzce"
+]
+// for (let i = 0; i < sehirler.length; i++) {
+
+//     console.log(sehirler[i].toLowerCase());
+
+// }
+// for (let i = 0; i < sehirler.length; i++) {
+//     if (sehirler[i].endsWith("p")) {
+//         console.log(sehirler[i]);
+//     }
+// }
+for (let i = 0; i < sehirler.length; i++) {
+    if (sehirler[i].startsWith("A")) {
+        console.log(sehirler[i].toUpperCase());
     }
 }
 
 
-if (tahmin == sayi) {
-    console.log(`Doğru bildin. kalan hakkın ${hak}`);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
