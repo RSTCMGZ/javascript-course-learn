@@ -274,8 +274,7 @@
 //     dizi.push(random)
 // }
 
-let sehirler = ["Adana", "Adıyaman", "Afyon", "Ağrı", "Amasya", "Ankara", "Antalya", "Artvin", "Aydın", "Balıkesir", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Edirne", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkari", "Hatay", "Isparta", "İçel (Mersin)", "İstanbul", "İzmir", "Kars", "Kastamonu", "Kayseri", "Kırklareli", "Kırşehir", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa", "Kahramanmaraş", "Mardin", "Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Tekirdağ", "Tokat", "Trabzon", "Tunceli", "Şanlıurfa", "Uşak", "Van", "Yozgat", "Zonguldak", "Aksaray", "Bayburt", "Karaman", "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan", "Iğdır", "Yalova", "Karabük", "Kilis", "Osmaniye", "Düzce"
-]
+
 // for (let i = 0; i < sehirler.length; i++) {
 
 //     console.log(sehirler[i].toLowerCase());
@@ -286,34 +285,181 @@ let sehirler = ["Adana", "Adıyaman", "Afyon", "Ağrı", "Amasya", "Ankara", "An
 //         console.log(sehirler[i]);
 //     }
 // }
-for (let i = 0; i < sehirler.length; i++) {
-    if (sehirler[i].startsWith("A")) {
-        console.log(sehirler[i].toUpperCase());
+// for (let i = 0; i < sehirler.length; i++) {
+//     if (sehirler[i].startsWith("A")) {
+//         console.log(sehirler[i].toUpperCase());
+//     }
+// }
+
+//! 5 harften oluşan şehirleri bir diziye atın.
+
+
+// let dizi = []
+// for (let sehir of sehirler) {
+//     if (sehir.length == 5) {
+//         dizi.push(sehir)
+//     }
+
+// }
+
+// console.log(dizi);
+
+//! Bankamatik Uygulaması
+// let bakiye = 2000;
+// while (true) {
+//     let tercih = prompt("Bankamıza Hoşgeldiniz \n 1-Bakiye göster \n 2-Para çek \n 3-Para yatır \n 4-Çıkış yap")
+//     if (tercih == 1) {
+//         alert(`Mevcut bakiyeniz ${bakiye}`)
+//     } else if (tercih == 2) {
+//         let kacpara = prompt("Kaç lira cekeceksiniz?")
+//         if (kacpara > bakiye) {
+//             alert("Bakiye yetersiz.")
+//         } else {
+//             bakiye -= kacpara
+//             alert(`Mevcut bakiyeniz ${bakiye}`)
+//         }
+//     } else if (tercih == 3) {
+//         let kacPara = Number(prompt("Kaç lira yatıracaksınız?"))
+//         bakiye += kacPara
+//         alert(`Mevcut bakiyeniz ${bakiye}`)
+//     } else if (tercih == 4) {
+//         alert("Başarılı ile çıkış yapılmıştır")
+//         break
+//     } else {
+//         alert("Hatalı tuşlama yaptınız")
+//     }
+// }
+
+//!Sayı tahmin oyunu
+
+// let random = Math.round(Math.random() * 10)
+// console.log(random);
+// let hak = 3;
+// while (true) {
+//     let tahmin = Number(prompt("Bir sayı tahmin edin(0-10)"))
+//     hak--
+//     if (hak == 0 && tahmin != random) {
+//         alert(`Tüm hakkın bitti`)
+//         break;
+//     }
+//     if (tahmin > random) {
+//         alert(`Daha küçük bir sayı giriniz ${hak} hakkın kaldı`);
+//     } else if (tahmin < random) {
+//         alert(`Daha büyük bir sayı giriniz ${hak} hakkın kaldı`);
+//     } else {
+//         alert(`Tebrikler ${3 - hak} denemede kazandın`);
+//         break;
+//     }
+
+// }
+//!Zar Atma Oyunu
+// let zar1 = (Math.ceil(Math.random() * 6));
+// let zar2 = (Math.ceil(Math.random() * 6));
+
+// if (zar1 == zar2) {
+//     console.log("kazandınız");
+// } else {
+//     console.log("Kaybettiniz");
+// }
+
+// let dizi = []
+// for (let i of sehirler) {
+//     let uc = i.slice(0, 3)
+//     dizi.push([i, uc])
+// }
+// console.log(dizi);
+//!En uzun karakterli ilimiz:
+
+// let enuzun = ""
+
+// for (let i of sehirler) {
+//     if (enuzun.length < i.length) {
+//         enuzun = i
+//     }
+// }
+// console.log(enuzun);
+
+//! Çarpım tablosu
+
+// for (let i = 0; i <= 10; i++) {
+//     for (let l = 0; l <= 10; l++) {
+//         console.log(`${i} x ${l} = ${i * l}`);
+
+//     }
+// }
+
+//! ekrana her bir kere mehmet yazacak ve 5 kere vuh süper yazacak
+// for (let i = 0; i < 5; i++) {
+//     console.log("Reso");
+//     for (let l = 0; l < 5; l++) {
+//         console.log(` süper`);
+//     }
+// }
+//! Rize'den sonraki ili yazdırın.
+
+// let rizedensonrakisehir = sehirler.indexOf("Rize") + 1;
+// console.log(sehirler[rizedensonrakisehir]);
+
+//! En çok elemanlı şehir ve en az elemanlı şehirin farkı kaç
+
+// let enuzun = ""
+// let enkısa = "asdas"
+
+// for (let i of sehirler) {
+//     if (enuzun.length < i.length) {
+//         enuzun = i
+//     }
+//     if (enkısa.length > i.length) {
+//         enkısa = i
+//     }
+// }
+// console.log(enuzun.length - enkısa.length);
+
+//! sonu land ile biten ülkeleri ekrana yazdırın
+
+// for (let country of countries) {
+//     if (country.endWith("land")) {
+//         console.log(country);
+//     }
+// }
+//! A ile başlayan ülkelerin sayısı mı fazla yoksa T ile başlayan ülkelerin sayısı mı?
+// let a = []
+// let t = []
+// for (let country of countries) {
+//     if (country.startsWith("A")) {
+//         a.push(country)
+//     } else if (country.startsWith("T")) {
+//         t.push(country)
+//     }
+// }
+
+// if (a.length > t.length) {
+//     console.log(`A ile başlayan ülkeler daha fazla ${a.length - t.length}`);
+// } else {
+//     console.log(`T ile başlayan ülkelerin sayısı  daha fazla ${t.length - a.length}`);
+// }
+//! Kaç ülke E harfi içermiyenleri yazdır
+// let dizi = []
+// for (let country of countries) {
+//     if (!country.toLowerCase().includes("e")) {
+//         dizi.push(country)
+//     }
+// }
+// console.log(dizi);
+//! Taş kağıt makas oyunu
+let oyun = ["Taş", "Kağıt", "Makas"]
+
+while (true) {
+    let random = Math.round(Math.random() * (oyun.length - 1))
+    let bilgisayarSecimi = oyun[random]
+    let oyuncu = prompt("Taş-Kağıt-Makas seçimi yapınız (tas-kağıt-makas)")
+    if ((bilgisayarSecimi == "Taş" && oyuncu == "Makas") || (bilgisayarSecimi == "Kağıt" && oyuncu == "Taş") ||
+        (bilgisayarSecimi == "Makas" && oyuncu == "Kağıt")
+    ) {
+        console.log("Kaybettiniz");
+    } else if ((oyuncu == "Taş" && bilgisayarSecimi == "Makas") || (oyuncu == "Kağıt" && bilgisayarSecimi == "Taş") ||
+        (oyuncu == "Makas" && bilgisayarSecimi == "Kağıt")
+    ) {
+
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
