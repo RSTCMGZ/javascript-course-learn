@@ -123,6 +123,95 @@
 
 // console.log(uzunluk(isim));
 
+//! yield kullanımı
+
+// function* islem() {
+//     for (let i = 0; i < 5; i++) {
+//         yield i
+//     }
+// }
+
+// console.log(
+//     iterator.next().value
+// );
+// console.log(
+//     iterator.next().value
+// );
+// console.log(
+//     iterator.next().value
+// );
+// console.log(
+//     iterator.next().value
+// );
+// console.log(
+//     iterator.next().value
+// );
+// console.log(
+//     iterator.next().value
+// );
+// console.log(iller.Adana);
+
+// for (let i of iller.Adana) {
+//     console.log(i)
+// }
+
+
+//!iller içindeki içindeki N ile biten ilçeler
+// function burdurN(sehir) {
+//     let nileBitenler = []
+//     let il = sehir[0].toLocaleUpperCase("tr") + sehir.slice(1, sehir.length)
+//     for (let i of iller[il]) {
+//         if (i.endsWith("n")) {
+//             nileBitenler.push(i)
+//         }
+//     }
+//     return nileBitenler
+// }
+
+// console.log(
+//     burdurN("izmir")
+// );
+//! sehirlerin içindeki elemanlardan K ile başlayan ve e içermeyen şehirleri bulun
+
+// function sehir(ilebaslayan, icermeyen) {
+//     let kVe = []
+//     let kveİlceler = []
+//     for (let i of sehirler) {
+//         if (i.startsWith(ilebaslayan.toLocaleUpperCase("tr")) && !i.includes(icermeyen)) {
+//             kVe.push(i)
+//         }
+//     }
+//     if (kVe.length != 0) {
+//         for (let i of iller[kVe[0]]) {
+//             kveİlceler.push(i)
+//         }
+//     }
+//     return kveİlceler
+
+// }
+// console.log(
+//     sehir("a", "n")
+// );
+
+//! bir il yazayım ve onun ilçelerini söylesin.
+
+// function ilceSöyle(il) {
+//     return iller[il]
+// }
+
+// console.log(
+//     ilceSöyle("İzmir")
+// );
+
+
+
+
+
+
+
+
+
+
 
 
 

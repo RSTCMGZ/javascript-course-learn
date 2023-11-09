@@ -67,3 +67,110 @@
 
 
 
+//! DOM YAPISI TEKRAR
+
+//? id ile secmek
+// const h1 = document.getElementById("baslik")
+// h1.style.color = "red"
+// console.log(h1);
+
+//? class ile secmek (liste döndürür ve ben ilgili elemana index numarası ile yada for döngüsü ile ulaşırım)
+// const title = document.getElementsByClassName("title")
+
+// for (let i of title) {
+//     console.log(i);
+// }
+// console.log(
+//     title[i]
+// );
+//? tag yani etiket adı ile seçmek
+
+// const liler = document.getElementsByTagName("li")
+
+// console.log(
+//     liler
+// );
+// for (let i = 0; i < liler.length; i++) {
+//     console.log(liler[i]);
+// }
+//! class ve tagler hic elemanları olmasa dahi bir dizi şeklinde dönerler.Bir eleman oluncada öyle oluyor.
+// const p = document.getElementsByClassName("paragraf")
+// console.log(p);
+// const btn = document.getElementsByTagName("button")
+// console.log(btn);
+
+
+
+// const h1 = document.querySelector("#baslik")
+
+// console.log(h1);
+
+// const paragraf = document.querySelectorAll(".paragraf")
+// console.log(paragraf);
+
+// const ulLi = document.querySelectorAll("ul > li")
+// console.log(ulLi);
+
+// const h1 = document.querySelector("h1")
+// console.log(h1);
+
+// h1.style.color = "red"
+
+
+//! attribute eklemek 
+//? setAttribute
+const h1 = document.getElementById("title")
+h1.setAttribute("class", "yesss")
+h1.setAttribute("id", "degisti")
+h1.setAttribute("title", "bu bir başlıktır")
+console.log(h1);
+
+// const img = document.getElementById("img")
+
+// img.setAttribute("src", "https://picsum.photos/id/230/200/200")
+
+const inp = document.getElementById("username")
+
+inp.setAttribute("type", "password")
+
+inp.setAttribute
+//? getAttribute
+console.log(inp.getAttribute("type"));
+
+//! class eklemek
+//? classname ile eklemek
+
+const p = document.getElementById("content")
+
+p.className = "degisti ti ti ti ti ti"
+//? classlist ile eklemek
+p.classList.add("yeniclass", "asd", "ass")
+p.classList.remove("yeniclass")
+p.id = "degisti1"
+
+//? style eklemek
+p.style.fontSize = "50px"
+//? yazıyı değiştirmek
+//? textContent
+p.textContent = "reso"
+//? innerTExt
+p.innerText = "reso"
+//? innerHTML
+// p.innerHTML = "<span class='ilk-baslik'>Bu kısım span</span> Bu kısım span dışında"
+console.log(p);
+
+
+//? butona tıklamak
+const btn = document.getElementById("button")
+const resim = document.getElementById("img")
+
+btn.addEventListener("click", () => {
+    // p.innerHTML = "<span class='ilk-baslik'>Bu kısım span</span> Bu kısım span dışında"
+    if (resim.getAttribute("src") == "https://picsum.photos/id/237/200/300") {
+        resim.setAttribute("src", "https://picsum.photos/id/40/200/300")
+    } else {
+        resim.setAttribute("src", "https://picsum.photos/id/237/200/300")
+    }
+})
+
+
