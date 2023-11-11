@@ -1,15 +1,18 @@
 const inputlar = document.getElementsByClassName("inp")
-const icon = document.querySelector(".icon")
+const icon = document.getElementById("bi")
 const pass = document.getElementById("pass")
 console.log(icon);
 
-icon.addEventListener("click", function sifreGöster() {
+icon.addEventListener("click", function sifreGöster(e) {
     if (pass.getAttribute("type") == "password") {
+
         pass.setAttribute("type", "text")
-        icon.textContent = "visibility"
+        icon.classList.remove("bi-eye-fill")
+        icon.classList.add("bi-eye-slash")
     } else {
         pass.setAttribute("type", "password")
-        icon.textContent = "visibility"
+        icon.classList.remove("bi-eye-slash")
+        icon.classList.add("bi-eye-fill")
     }
 })
 for (let input of inputlar) {
@@ -19,7 +22,7 @@ for (let input of inputlar) {
         label.style.top = "2px"
     })
     input.addEventListener("focusout", function labelYerlestir() {
-        if (input.value = " ") {
+        if (input.value = "") {
             let label = this.parentElement.children[0]
             label.style.fontSize = "16px"
             label.style.top = "15px"
