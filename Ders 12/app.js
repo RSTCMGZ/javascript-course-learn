@@ -135,3 +135,169 @@
 
 
 //? Bir kullanıcı kayıt formu oluştur kullanıcının bilgilerini alıp localstorage'e kaydet ve login sayfası olsun kullanıcının bilgileri local'de varsa o bilgileri yazıp entera bastıgında 
+//!ForEach Nedir?
+
+
+// for (let i = 0; i < dizi.length; i++) {
+//     console.log(dizi[i], i);
+// }
+
+// dizi.forEach((eleman, index, array) => {
+//     console.log(eleman, index, array);
+// })
+
+//! MAP
+
+//  let yeniDizi = []
+
+// for (let i of dizi) {
+//     yeniDizi.push(i ** 2)
+// }
+// console.log(yeniDizi);
+
+// let yeniDizi = dizi.map((eleman, index, dizi) => eleman ** 2)
+// console.log(yeniDizi);
+// let ulkeler = ["Tayland", "Netherland", "Turkey", "Italy", "Afganistan"]
+// let yeniUlkeler = ulkeler.map((ulke) => {
+//     if (ulke.includes("land")) {
+//         return ulke.toUpperCase()
+//     }
+//     return ulke
+// })
+// console.log(yeniUlkeler);
+// let ciftler = []
+// dizi = [1, 2, 3, 4, 5, 6, 7, 8, 90,]
+// for (let i of dizi) {
+//     if (i % 2 == 0) {
+//         ciftler.push(i)
+//     }
+// }
+
+// console.log(ciftler);
+
+// let ciftler = dizi.filter((sayilar, index, array) => sayilar % 2 == 0)
+
+// console.log(ciftler);
+
+//! REDUCE FONKSİYON
+// let dizi = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// let sonuc = dizi.reduce((toplam, eleman, index, array) => toplam + eleman)
+
+// console.log(sonuc);
+
+
+// let sepet = [
+//     {
+//         urun: "Telefon",
+//         fiyat: 5000
+//     },
+//     {
+//         urun: "Bilgisayar",
+//         fiyat: 6000
+//     },
+//     {
+//         urun: "Kulaklık",
+//         fiyat: 2000
+//     },
+// ]
+// let topla = sepet.reduce((toplamFiyat, item) => toplamFiyat + item.fiyat, 0)
+
+// console.log(topla);
+
+// //? dizinin içerisindeki tekrar eden elemanları bulmaya yarar.
+
+// let isimler = ["Mehmet", "Mehmet", "Ali", "Hasan", "Mehmet", "Hasan", "Ali", "Mehmet", "Mehmet", "Ali"]
+
+// let tekrarEdenler = isimler.reduce((acc, item) => {
+//     if (item in acc) {
+//         acc[item]++
+//     } else {
+//         acc[item] = 1
+//     }
+//     return acc
+// }, {})
+// console.log(tekrarEdenler);
+//?
+
+let urunler = [
+    {
+        ad: "Iphone",
+        brand: "Apple"
+    },
+    {
+        ad: "Macbook",
+        brand: "Apple"
+    },
+    {
+        ad: "Kulaklık",
+        brand: "JBL"
+    },
+    {
+        ad: "Hoparlor",
+        brand: "JBL"
+    },
+    {
+        ad: "Kalem",
+        brand: "Apple"
+    },
+    {
+        ad: "Saat",
+        brand: "Apple"
+    }
+]
+//? Markaları ayrı ayrı yazdırdık.
+// let kategorize = urunler.reduce((acc, item) => {
+//     if (!acc[item.brand]) {
+//         acc[item.brand] = []
+//     }
+//     acc[item.brand].push(item)
+//     return acc
+// }, {})
+// console.log(kategorize);
+
+//! Every Function (dizinin tüm elemanlarını gezip true or false döndürür.)
+
+let isimler = ["Mehmet", "Mehmet", "Ali", "Hasan", "Mehmjet", "Hasan", "Ali", "Mehmet", "Mehmet", "Ali"]
+let bool = isimler.every((eleman, index, arr) => eleman.includes("a"))
+// console.log(bool);
+
+//! Some (sadece bir eleman koşulu sağlasa yeterli.)
+
+let boole = isimler.some((item, index, arr) => item.includes("j"))
+
+console.log(boole);
+//! Find 
+let ali = isimler.find((eleman, index, array) => eleman == "Ali")
+
+console.log(ali);
+//! FindIndex
+
+let ali1 = isimler.findIndex((eleman, index, array) => eleman == "Ali")
+
+console.log(ali1);
+
+//! Sort -sıralamak (elemanları sıralarken bütün hepsini string'e çevirir ve dizinin kendisini de değiştirir.)
+
+let number = [5, 4, 6, 8, 1, 3, 22, 62, 36, 21]
+
+number.sort((x, y) => x - y)
+console.log(number);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
