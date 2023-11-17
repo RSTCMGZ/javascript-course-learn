@@ -85,3 +85,53 @@
 // //     }
 // // })
 
+//! LOCALSTORAGE
+
+//!local storage bilgi saklamak
+// localStorage.setItem('isim', 'ahmet')
+// //!local storage bilgi çekmek
+// localStorage.getItem('isim')
+
+// let todos = [
+//     {
+//         todo: "Bulaşık yıka",
+//         isCompleted: false
+//     },
+//     {
+//         todo: "Çamaşır yıka",
+//         isCompleted: false
+//     }
+//]
+// localStorage.setItem('yapilacaklar', JSON.stringify(todos))
+// //! Bir objeyi stringleştirmek.
+// // JSON.stringify(todos)
+// //! Bir stringi objeleştirmek
+// // JSON.parse()
+// console.log(JSON.parse(localStorage.getItem("yapilacaklar")));
+
+
+// let mevcutTodos = JSON.parse(localStorage.getItem("yapilacaklar"))
+// let todo = {
+//     todo: 'kedinin tuvaletini temizle',
+//     isCompleted: false
+// }
+
+
+// mevcutTodos.push(todo)
+
+// localStorage.setItem('yapilacaklar', JSON.stringify(mevcutTodos))
+
+// let todos = JSON.parse(localStorage.getItem('yapilacaklar'))
+
+// let todo = {
+//     todo: 'çöpü at',
+//     isComplated: false
+// }
+
+// todos.push(todo)
+
+// localStorage.setItem('yapilacaklar', JSON.stringify(todo))
+
+
+
+//? Bir kullanıcı kayıt formu oluştur kullanıcının bilgilerini alıp localstorage'e kaydet ve login sayfası olsun kullanıcının bilgileri local'de varsa o bilgileri yazıp entera bastıgında 
